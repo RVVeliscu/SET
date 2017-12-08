@@ -1,0 +1,10 @@
+1) in acest director: node main.js
+2) in System32\drivers\etc\hosts: 127.65.43.21  ip-ul accesat din browser (cu admin)
+3) in CMD/PowerShell netsh interface portproxy add v4tov4 listenport=80 listenaddress=//o adresa ip libera// connectport=//port configurat din server// connectaddress=127.0.0.1
+Teoretic gata !!!
+
+pt ca sa vezi conexiunea facuta din cmd:
+netsh interface portproxy show v4tov4
+
+ca sa o stergi:
+netsh interface portproxy delete v4tov4 listenport=80 listenaddress=//adresa ip pusa mai sus//
